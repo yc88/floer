@@ -1,0 +1,72 @@
+<!--pages/courseDetail/courseDetail.wxml-->
+<!--课程详情页面  -->
+<view class='course_detail_box' >
+  <view class='video_show'>
+    <video id="myVideo" objectFit="fill" autoplay='1' show-center-play-btn="true" src="{{hostUrl}}{{dataOne.video_url}}" binderror="videoErrorCallback" controls></video>
+  </view>
+  <!--课程相关简介  -->
+  <view class='content_box'>
+    <view class='content_box_son'>
+      <text style='border:none;'>{{dataOne.courser_name}}</text>
+      <image mode="widthFix" src='{{hostUrl}}{{dataOne.course_detail_photo}}'></image>
+    </view>
+
+    <view class='content_box_son'>
+      <text>你将学到</text>
+      <image mode="widthFix" src='{{hostUrl}}{{dataOne.learn_photo}}'></image>
+    </view>
+
+    <view class='content_box_son'>
+      <text>课程大纲</text>
+      <image mode="widthFix"  src='{{hostUrl}}{{dataOne.course_photo}}'></image>
+    </view>
+
+    <view class='content_box_son'>
+      <text>导师简介</text>
+      <image mode="widthFix" src='{{hostUrl}}{{dataOne.teacher_detail}}'></image>
+    </view>
+
+    <view class='content_box_son'>
+      <text>学员作品</text>
+      <image mode="widthFix" src='{{hostUrl}}{{dataOne.production_photo}}'></image>
+    </view>
+
+    <view class='content_box_son'>
+      <text>学员结业照</text>
+      <image mode="widthFix" src='{{hostUrl}}{{dataOne.graduation_photo}}'></image>
+    </view>
+
+    <view class='content_box_son'>
+      <text>结业证书</text>
+      <image mode="widthFix" src='{{hostUrl}}{{dataOne.diploma_photo}}'></image>
+    </view>
+  </view>
+  <!--咨询客服 立即报名  -->
+  <view class="customer_buy">
+    <button open-type="contact"  bindcontact="Handler" class='but_question_1' hover-start-time="1">
+      <image  src='../../images/3x/course_cs@3x.png'></image>
+      <view class='question_view'>咨询客服</view>
+        </button>
+<navigator url='../buycourse/buycourse?cid={{dataOne.id}}' >
+    <button  plain='' size="mini" hover-start-time="1" data-cid='{{dataOne.id}}' class='but_question_buy'>
+      立即报名</button>
+</navigator>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

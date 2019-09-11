@@ -1,0 +1,82 @@
+/* pages/courseDetail/courseDetail.wxss */
+.course_detail_box{
+  background: #fff;
+}
+
+/*视频播放 */
+.course_detail_box .video_show{
+  /* border: 1px solid red; */
+  margin: 0rpx;
+  padding: 0rpx;
+}
+#myVideo{
+  width: 100%;
+  margin-bottom: 0rpx;
+}
+.content_box{
+  display: flex;
+  flex-direction: column;
+}
+.content_box_son{
+  margin: 25rpx;
+   /* border:1px solid red;  */
+}
+.content_box_son text{
+  color: #BA9F70;
+  border-left: 5rpx solid #BA9F70;
+  padding-left: 20rpx;
+  margin-bottom: 25rpx;
+}
+.content_box_son image{
+  width: 100%;
+  margin-top:30rpx; 
+}
+
+/*底部咨询 报名  */
+.customer_buy{
+  width: 100%;
+   display: flex;
+  flex-direction: row; 
+  position:fixed;
+  bottom:0; 
+    background: #FFFFFF;
+}
+.customer_buy  .but_question_1{
+  height: 100rpx;
+   width: 100%;
+  line-height: 100rpx;
+  border-right: none;
+  background: #FFFFFF;
+  color: #B79A6E;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 45rpx;
+  margin-right: 0rpx;
+   margin-left: 0rpx;
+}
+button::after{
+  border: none;
+}
+.customer_buy  .but_question_1 image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.customer_buy  .but_question_1 .question_view{
+  margin-left: 15rpx;
+}
+.customer_buy navigator{
+   width: 100%;
+  height: 100rpx;
+}
+.customer_buy navigator .but_question_buy{
+   width: 100%;
+  height: 100rpx;
+   line-height: 100rpx;
+    background: #B79A6E;  
+  border-radius: 0rpx;
+  color: #fff;
+  font-size: 45rpx;
+  margin-left: 0rpx;
+  border-left-style: none;
+}
